@@ -1,0 +1,14 @@
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\bin\Debug\net8.0\Laba 1.2 (2.S).exe
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\bin\Debug\net8.0\Laba 1.2 (2.S).deps.json
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\bin\Debug\net8.0\Laba 1.2 (2.S).runtimeconfig.json
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\bin\Debug\net8.0\Laba 1.2 (2.S).dll
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\bin\Debug\net8.0\Laba 1.2 (2.S).pdb
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\Laba 1.2 (2.S).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\Laba 1.2 (2.S).AssemblyInfoInputs.cache
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\Laba 1.2 (2.S).AssemblyInfo.cs
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\Laba 1.2 (2.S).csproj.CoreCompileInputs.cache
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\Laba 1.2 (2.S).dll
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\refint\Laba 1.2 (2.S).dll
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\Laba 1.2 (2.S).pdb
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\Laba 1.2 (2.S).genruntimeconfig.cache
+C:\Users\vanya\Desktop\Laba 1.2 (2.S)\Laba 1.2 (2.S)\obj\Debug\net8.0\ref\Laba 1.2 (2.S).dll
