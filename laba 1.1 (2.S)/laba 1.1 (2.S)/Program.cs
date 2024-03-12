@@ -30,83 +30,35 @@ namespace Lists
                 Console.WriteLine(s.Name + " " + s.surname + " " + s.fathersName + ", Курс - " + s.cours + ", Група - " + s.NumGroup);
                 int serbal = (s.Mark5 + s.Mark2 + s.Mark3 + s.Mark4 + s.Mark1) / 5;
                 Console.WriteLine("                      Середьня оцінка: " + serbal);
-            }
-            int SBФМ211 = 0;
-            int SBФМ311 = 0;
-            int SBФЛ211 = 0;
-            int SBФЛ311 = 0;
-            int SBФМ212 = 0;
-            int SBФМ312 = 0;
-            int SBФЛ212 = 0;
-            int SBФЛ312 = 0;
-            int SBФМ213 = 0;
-            int SBФМ313 = 0;
-            int SBФЛ213 = 0;
-            int SBФЛ313 = 0;
-            int SBФМ214 = 0;
-            int SBФМ314 = 0;
-            int SBФЛ214 = 0;
-            int SBФЛ314 = 0;
-            int SBФМ215 = 0;
-            int SBФМ315 = 0;
-            int SBФЛ215 = 0;
-            int SBФЛ315 = 0;
-            int clw1 = 0;
-            int clw2 = 0;
-            int clw3 = 0;
-            int clw4 = 0;
+            };
 
+            BestOcenkaGroup("ФМ-21", listofstudents);
+            BestOcenkaGroup("ФМ-31", listofstudents);
+            BestOcenkaGroup("ФЛ-21", listofstudents);
+            BestOcenkaGroup("ФЛ-31", listofstudents);
+            Console.ReadKey();
+        }
+        static void BestOcenkaGroup(string group, List<students> listofstudents)
+        {
+            int j = 0;
+            int SR1 = 0;
+            int SR3 = 0;
+            int SR2 = 0;
+            int SR4 = 0;
+            int SR5 = 0;
             for (int i = 0; i < listofstudents.Count; i++)
             {
-                for (int j = 0; j < listofstudents.Count; j++)
+                if (listofstudents[i].NumGroup == group)
                 {
-                    if (listofstudents[i].NumGroup == "ФМ-31" && listofstudents[j].NumGroup == "ФМ-31")
-                    {
-                        SBФМ311 = SBФМ311 + listofstudents[i].Mark1;
-                        SBФМ312 = SBФМ312 + listofstudents[i].Mark2;
-                        SBФМ313 = SBФМ313 + listofstudents[i].Mark3;
-                        SBФМ314 = SBФМ314 + listofstudents[i].Mark4;
-                        SBФМ315 = SBФМ315 + listofstudents[i].Mark5;
-                        clw1++;
-                    }
-                    if (listofstudents[i].NumGroup == "ФЛ-31" && listofstudents[j].NumGroup == "ФЛ-31")
-                    {
-                        SBФЛ311 = SBФЛ311 + listofstudents[i].Mark1;
-                        SBФЛ312 = SBФЛ312 + listofstudents[i].Mark2;
-                        SBФЛ313 = SBФЛ313 + listofstudents[i].Mark3;
-                        SBФЛ314 = SBФЛ314 + listofstudents[i].Mark4;
-                        SBФЛ315 = SBФЛ315 + listofstudents[i].Mark5;
-                        clw2++;
-                    }
-                    if (listofstudents[i].NumGroup == "ФЛ-21" && listofstudents[j].NumGroup == "ФЛ-21")
-                    {
-                        SBФЛ211 = SBФЛ211 + listofstudents[i].Mark1;
-                        SBФЛ212 = SBФЛ212 + listofstudents[i].Mark2;
-                        SBФЛ213 = SBФЛ213 + listofstudents[i].Mark3;
-                        SBФЛ214 = SBФЛ214 + listofstudents[i].Mark4;
-                        SBФЛ215 = SBФЛ215 + listofstudents[i].Mark5;
-                        clw3++;
-                    }
-                    if (listofstudents[i].NumGroup == "ФМ-21" && listofstudents[j].NumGroup == "ФМ-21")
-                    {
-                        SBФМ211 = SBФМ211 + listofstudents[i].Mark1;
-                        SBФМ212 = SBФМ212 + listofstudents[i].Mark2;
-                        SBФМ213 = SBФМ213 + listofstudents[i].Mark3;
-                        SBФМ214 = SBФМ214 + listofstudents[i].Mark4;
-                        SBФМ215 = SBФМ215 + listofstudents[i].Mark5;
-                        clw4++;
-                    }
+                    SR1 = SR1 + listofstudents[i].Mark1;
+                    SR2 = SR2 + listofstudents[i].Mark2;
+                    SR3 = SR3 + listofstudents[i].Mark3;
+                    SR4 = SR4 + listofstudents[i].Mark4;
+                    SR5 = SR5 + listofstudents[i].Mark5;
+                    j++;
                 }
-
             }
-
-            Winer(SBФМ311, SBФЛ311, SBФЛ211, SBФМ211, clw1, clw2, clw3, clw4);
-            Winer(SBФМ312, SBФЛ312, SBФЛ212, SBФМ212, clw1, clw2, clw3, clw4);
-            Winer(SBФМ313, SBФЛ313, SBФЛ213, SBФМ213, clw1, clw2, clw3, clw4);
-            Winer(SBФМ314, SBФЛ314, SBФЛ214, SBФМ214, clw1, clw2, clw3, clw4);
-            Winer(SBФМ315, SBФЛ315, SBФЛ215, SBФМ215, clw1, clw2, clw3, clw4);
-
-            Console.ReadKey();
+            Console.WriteLine("Середня оцінка з предметів групи: " + group + " " + SR1/j + " " + SR2 / j + " " + SR3 / j + " " + SR4 / j + " " + SR5 / j);
         }
         static int CompareStudCours(students x, students y)
         {
@@ -115,25 +67,6 @@ namespace Lists
         static int CompareStusents(students user1, students user2)
         {
             return user1.cours.CompareTo(user2.cours);
-        }
-        static void Winer(int h, int k, int g, int f, int clw1, int clw2, int clw3, int clw4)
-        {
-            if (h / clw1 > k / clw2 && h / clw1 > g / clw3 && h / clw1 > f / clw4)
-            {
-                Console.WriteLine(h / clw1);
-            }
-            if (k / clw2 > h / clw1 && k / clw2 > g / clw3 && k / clw2 > f / clw4)
-            {
-                Console.WriteLine(k / clw2);
-            }
-            if (g / clw3 > k / clw2 && g / clw3 > h / clw1 && g / clw3 > f / clw4)
-            {
-                Console.WriteLine(g / clw3);
-            }
-            if (f / clw4 > k / clw2 && f / clw4 > g / clw3 && f / clw4 > h / clw1)
-            {
-                Console.WriteLine(f / clw4);
-            }
         }
 
         class students
@@ -150,6 +83,5 @@ namespace Lists
             public int Mark4 { get; set; }
             public int Mark5 { get; set; }
         }
-        
     }
 }
