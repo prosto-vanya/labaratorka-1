@@ -18,20 +18,22 @@ namespace DictionaryTasks
             };
 
 
-            var cennicDO = from x in tovary.Keys
-                         where x < 300
+            var cennicDO = from x in tovary
+                         where x.Key < 300
                          select x;
-            var cennicBOLSHE = from c in tovary.Keys
-                           where c > 300
+            var cennicBOLSHE = from c in tovary
+                           where c.Key > 300
                            select c;
+            Console.WriteLine("Цінники менше ніж:  ");
             foreach ( var v in cennicDO )
             {
-                Console.WriteLine("Цінники менше ніж:  " + v );
+                Console.WriteLine( v.Value + " - " + v.Key);
             }
             Console.WriteLine("\n");
+            Console.WriteLine("Цінники більше ніж:  ");
             foreach ( var c in cennicBOLSHE ) 
             {
-                Console.WriteLine("Цінники більше ніж:  " + c );
+                Console.WriteLine( c.Value +" - "+ c.Key);
             }
         }
     }
